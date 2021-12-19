@@ -231,7 +231,7 @@ when 1 then puts "Excellent, it seems we have a brave warrior in our presence!" 
       line
 
       #FORCES CONTINUE OR TURN
-      until decision_2a2 == "Continue" || decision_2a2 == "Straight" || decision_2a2 == "Turn" || decision_2a2 == "Right"
+      until decision_2a2 == "Continue" || decision_2a2 == "Turn"
         system("cls")
         puts "Frustrated with no choice but to continue, you notice 2 more openings." ; sleep(1) ; line
         puts "You: " ; sleep(1)
@@ -248,7 +248,7 @@ when 1 then puts "Excellent, it seems we have a brave warrior in our presence!" 
         
 
       #PLAYER TURNS RIGHT, SAME AS INITIALLY TURNING RIGHT WHEN LEAVING SPAWN POINT, RESULTS IN GAME OVER.
-      when "Turn" || "Right"
+      when "Turn"
         puts "You slowly advance down the darker passage to the right, praying this wasn't a mistake." ; sleep(3) ; line
         puts "Suddenly you feel something GRABBING your arm abruptly and violently!" ; sleep(3) ; line
         puts "You: " ; sleep(1.5)
@@ -295,7 +295,7 @@ when 1 then puts "Excellent, it seems we have a brave warrior in our presence!" 
       decision_2a2 = gets_caps
 
       #FORCES PLAYER TO CONTINUE OR TURN, TURN RESULTS IN GAME OVER.
-      until decision_2a2 == "Continue" || decision_2a2 == "Straight" || decision_2a2 == "Turn" || decision_2a2 == "Right"
+      until decision_2a2 == "Continue" || decision_2a2 == "Turn" || decision_2a2 == "Straight" || decision_2a2 == "Right"
         system("cls")
         puts "You notice 2 more openings." ; sleep(1) ; line
         puts "You: " ; sleep(1)
@@ -398,34 +398,9 @@ when 1 then puts "Excellent, it seems we have a brave warrior in our presence!" 
   continue
   %x{mspaint cave.jpg}
 
-  puts "That's all for now, thanks for playing the demo :)"
+  puts "That's all for now, thanks for play the demo :)"
   puts "Press enter to exit"
   continue
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -485,5 +460,3 @@ when 1 then puts "Excellent, it seems we have a brave warrior in our presence!" 
     when 10 then puts "Admirable! #{player1}, #{player2}, do me proud young warriors!"
   end
 end
-
-
